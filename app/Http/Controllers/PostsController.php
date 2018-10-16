@@ -32,7 +32,7 @@ class PostsController extends Controller
         //$posts = Post:all(); another way to 
         // retrun Post::where('titel','post 2');
             //$posts = Post::orderBy('title','desc')->take(1)->get(); get only one post
-        $posts = Post::orderBy('created_at','desc')->paginate(10); // return all data in posts model orderd by its title and paginated to be 10 posts per page(table)
+        $posts = array(Post::orderBy('created_at','desc')->paginate(10)); // return all data in posts model orderd by its title and paginated to be 10 posts per page(table)
         return view('posts.index')->with('posts',$posts);
     }
 
