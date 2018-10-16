@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'BLOG') }}
+                {{ config('app.name', 'MYAPP') }}
             </a>
         </div>
 
