@@ -10,7 +10,7 @@
     <h1>Posts</h1>
     <a href="/posts/create" class="btn btn-primary">Create Post</a>
                     <h3>Your Blog Posts</h3>
-    @if(count($posts) > 0)
+    @if($posts > 0)
     <table class="table table-striped">
         <tr>
             <th>Title</th>
